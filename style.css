@@ -1,0 +1,104 @@
+html{
+    font-family: 'Noto sans JP' sans-serif;
+    /* background: repeating-linear-gradient(241.29deg, #ff00d6 0%, #f82323 100%);  */
+    background-blend-mode: multiply;  
+    background-image: url("opgg.jpg");
+    background-size:contain;
+    background-position: center;
+
+    /* background: linear-gradient(90deg, #F08EFC, #EE5166 ); */
+    /* background: linear-gradient(90deg, #f093fb, #f5576c ); */
+}
+h1{
+    color:rgb(255, 0, 170);
+    font-size: 50px;
+    text-decoration: underline;
+    font-style: italic;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: block;
+    position: absolute;
+}
+.app{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+.buttonGroup{
+    margin-top:150px ;
+}
+button{
+    position: relative;
+    cursor: pointer;
+    display: flexbox;
+    font-size: 20px;
+    justify-content: space-between; 
+    background: linear-gradient(#ff00c8,#ff0432);
+    margin: 20px 20px;
+    padding: 20px 50px;
+    border-width: 0px;
+    border-radius: 10px;
+    color:rgb(255, 238, 0);
+    box-shadow: 10px 10px 20px rgba(255, 0, 0, 0.9);
+    transition: all 0.3s ease-out;
+}
+.heart {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 50%;
+    left:50%;
+    width: 100px;
+    height: 100px;
+    background: pink;
+    transform: rotate(-45deg);
+    box-shadow: -10px 10px 120px pink;
+    animation: heart 0.6s linear infinite;
+}
+@keyframes heart {
+    0% {
+        transform: rotate(-45deg) scale(1.07);
+    }
+    100% {
+        transform: rotate(-45deg) scale(1.0);
+    }
+    100% {
+        transform: rotate(-45deg) scale(0.8);
+    }
+    
+}
+.heart::before {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background: pink;
+    top: -50%;
+    border-radius: 60px;
+    box-shadow: -10px 10px 120px pink;
+}
+.heart::after {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background: pink;
+    right: -50%;
+    border-radius: 60px;
+    box-shadow: -10px 10px 120px pink;
+}
+/* button{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+     margin: 10px 10px; 
+    padding: 10px 80px;
+    align-items: center;
+    background-color: rgb(255, 222, 6);
+    border: none;
+
+} */
+
+
+

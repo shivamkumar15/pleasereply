@@ -31,7 +31,7 @@ button{
     position: relative;
     cursor: pointer;
     display: flexbox;
-    font-size: 20px;
+    font-size: 30px;
     justify-content: space-between; 
     background: linear-gradient(#ff00c8,#ff0432);
     margin: 20px 20px;
